@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Contato from './Contato'
+import Header from './Header'
+import * as CSS from 'csstype'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const appStyle : CSS.Properties ={
+  display:'flex', 
+  flexDirection:'column', 
+  alignItems:'center'
 }
 
-export default App;
+type Props = {
+  children: React.ReactNode;
+};
+
+const App = ({children}:Props) => {
+  
+  return (
+    <div style={appStyle}>
+       <Header/>
+      {children}
+    </div>
+  )
+}
+
+export default App
