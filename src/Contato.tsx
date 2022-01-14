@@ -18,6 +18,7 @@ const imgContainerStyle:CSS.Properties = {
 }
 
 const contatoStyle: CSS.Properties = {marginLeft: '20px',width:'30%'}
+
 const Contato = () => {
   return (
     <div className="animeLeft" style={containerStyle}>
@@ -25,9 +26,9 @@ const Contato = () => {
             <img  width='300px' src={contatoImg} alt="contatoImg"/>
           </div>
          <div style={contatoStyle}>
-           <h3>Entre em contato</h3>
-           <p>__ josimara_lima88@hotmail.com</p>
-           <p>__ 84981180730</p>
+           <h3>&nbsp;&nbsp;&nbsp;&nbsp;Entre em contato</h3>
+           <p>__&nbsp;&nbsp;Josimara_lima88@hotmail.com</p>
+           <p>__&nbsp;&nbsp;84981180730</p>
          </div> 
         </div>
   )
