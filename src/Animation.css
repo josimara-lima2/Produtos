@@ -10,3 +10,18 @@
     transform: initial;
   }
 }
+
+.loader {
+  animation: rotating 1s infinite;
+  border: 10px solid #1C83EE;
+  border-radius: 50%;
+  border-top-color: #ccc;
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -21,16 +21,17 @@ const Prod = () => {
      fetch(url)
      .then(response => response.json())
      .then((json) => setProduto(json))
-    setLoading(false)
+      setLoading(false)
   }
  
-
  React.useEffect(() => {
-   const prm = params.id.normalize('NFD').replace(/[^a-zA-Zs]/g, "")
-   getProdutos(`https://ranekapi.origamid.dev/json/api/produto/${prm}`)
+    const prm = params.id.normalize('NFD').replace(/[^a-zA-Zs]/g, "")
+    getProdutos(`https://ranekapi.origamid.dev/json/api/produto/${prm}`)
+   
  },[])
  
   return (
+    
   <div className="animeLeft" style={containerProdEspecificoStyle}>
       {!loading && produto && (
         <div key={produto.id} style={prodEspecificoStyle}>
@@ -43,9 +44,9 @@ const Prod = () => {
            <div style={containerPrecoStyle}>{produto.preco}</div>
            <p>{produto.descricao}</p>
          </div>
-          
         </div>
       )}
+      {loading && <div className="loader" style={{marginTop: '20px'}}></div>}
     </div>
   )
 }
