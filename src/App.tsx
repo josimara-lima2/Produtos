@@ -1,13 +1,13 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Contato from './Contato'
 import Header from './Header'
 import * as CSS from 'csstype'
+import Footer from './Footer'
 
 const appStyle : CSS.Properties ={
   display:'flex', 
   flexDirection:'column', 
-  alignItems:'center'
+  alignItems:'center',
+  height:`calc(98vh)`
 }
 
 type Props = {
@@ -20,6 +20,7 @@ const App = ({children}:Props) => {
     <div style={appStyle}>
        <Header/>
       {children}
+      <Footer/>
     </div>
   )
 }
