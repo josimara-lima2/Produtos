@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import {Produto} from './Produto';
 import * as CSS from 'csstype';
-
+import './Animation.css'
 const containerProdEspecificoStyle:CSS.Properties = {display: 'flex', alignItems: 'space-between' , width: '60%', flexWrap: 'wrap'}
 const prodEspecificoStyle: CSS.Properties = {display: 'flex', alignItems: 'space-between', flex:1 }
 const containerImagemStyle:CSS.Properties = {display: 'flex', flexDirection: 'column', justifyContent: 'start', alignItems: 'space-between' }
@@ -31,7 +31,7 @@ const Prod = () => {
  },[])
  
   return (
-  <div style={containerProdEspecificoStyle}>
+  <div className="animeLeft" style={containerProdEspecificoStyle}>
       {!loading && produto && (
         <div key={produto.id} style={prodEspecificoStyle}>
           <div style={containerImagemStyle}>
