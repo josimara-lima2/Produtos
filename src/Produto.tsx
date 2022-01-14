@@ -13,7 +13,12 @@ export interface Produto {
     usuario_id:string;
 }
 
-const containerProdutosStyle: CSS.Properties = {display:'flex', width: '60%', flexWrap: 'wrap'}
+const containerProdutosStyle: CSS.Properties = {
+  display:'flex', 
+  width: '60%', 
+  flexWrap: 'wrap', 
+  marginTop:'20px',
+}
 const containerItem:CSS.Properties ={marginRight: '10px', width:'300px'}
 
 const Produto: React.FC = () => {

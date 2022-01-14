@@ -7,7 +7,8 @@ const appStyle : CSS.Properties ={
   display:'flex', 
   flexDirection:'column', 
   alignItems:'center',
-  height:`calc(98vh)`
+  height:`calc(98vh)`,
+  marginTop: '20px',
 }
 
 type Props = {

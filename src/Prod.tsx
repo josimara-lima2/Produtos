@@ -40,7 +40,7 @@ const Prod = () => {
             <img key={foto.src}  src={foto.src} alt={foto.titulo} style={imgStyle}/>
           ))}</div>
          <div style={containerInfoStyle}>
-           <h3>{produto.nome}</h3>
+           <h2>{produto.nome}</h2>
            <div style={containerPrecoStyle}>{produto.preco}</div>
            <p>{produto.descricao}</p>
          </div>

@@ -14,7 +14,8 @@ const imgContainerStyle:CSS.Properties = {
   display: 'flex', 
   flexDirection: 'column', 
   justifyContent: 'start', 
-  alignItems: 'start' 
+  alignItems: 'start',
+  marginTop:'20px' 
 }
 
 const contatoStyle: CSS.Properties = {marginLeft: '20px',width:'30%'}

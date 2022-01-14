@@ -5,8 +5,8 @@ import * as CSS from 'csstype'
 const linkStyle:CSS.Properties = {
   textDecoration:'none',
   backgroundColor: '#ccc', 
-  
-  padding: '5px 15px', 
+  borderRadius:'5px',
+  padding: '8px 15px', 
   color: '#000'
 }
 
