@@ -7,7 +7,8 @@ const appStyle : CSS.Properties ={
   display:'flex', 
   flexDirection:'column', 
   alignItems:'center',
-  height:`calc(98vh)`,
+  minHeight:`calc(100vh +10em)`,
+  
   marginTop: '20px',
 }
 
